@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" description="Cometh the man cometh the hour book">
+    <meta name="title" content="Comeththemancomeththehour">
+    <meta name="title" description="Best selling book">
+    <meta name="title"
+        content="Cometh the man cometh the hour is a best selling book promoting the campaign for Peter Obi's presidential run">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script defer src="js/index.js"></script>
+    <title>Cometh the man cometh the hour</title>
+</head>
+
+<body>
+    <!-- main section -->
+    <main>
+        <section class="wrapper">
+            <section>
+                <!-- header starts -->
+                <header class="header">
+                    <!-- navigation menu -->
+                    <div class="nav-menu">
+                        <div class="menu-list">
+                            <a href="index.html">Home</a>
+                            <a href="inc/shop.php">Shop</a>
+                            <a href="register.html">Join the movement</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+        
+                    <!-- mobile menu -->
+                    <div class="hamburger">
+                        <i onclick="nav()" class="fa-solid fa-bars fa-3x"></i>
+                    </div>
+        
+                    <!-- display mobile menu list -->
+                    <div id="nav-menu-list" class="menu-list-wrapper hide">
+                        <div class="menu-list">
+                            <i onclick="nav()" class="cancel fa-solid fa-xmark fa-3x"></i>
+                            <a href="index.html">Home</a>
+                            <a href="inc/shop.php">Shop</a>
+                            <a href="register.html">Join the movement</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+        
+                    <!-- logo -->
+                    <figure class="logo">
+                        <img src="img/logo320.png" width="320" height="320" alt="Logo" />
+                    </figure>
+        
+                    <!-- quote -->
+                    <div class="quote">
+                        <h2>The Promise:</h2><br />
+                        <p>
+                            "I will turn Nigeria from consumption to production, and cut costs of Governance"
+                        </p>
+                    </div>
+                </header>
+            </section>
+        </section>
+    </main>
+
+    <!-- body section -->
+    <!-- contact form and details -->
+    <section class="contents">
+        <h1>Get in touch with us</h1>
+        <p>Got questions? Leave us a message or reach out to us using the following media. Our representatives are always delighted to attend to your every need.</p>
+
+        <div class="content-wrapper">
+            <div class="contact-details">
+                <span>
+                    <i class="fa-solid fa-location-dot fa-3x"></i>
+                </span>
+                <p><span>Office Address:</span> Emzak plaza by Ero garden before first bank phase 4 kubwa Fct Abuja</p>
+
+                <span>
+                    <i class="fa-solid fa-phone-volume fa-3x"></i>
+                </span>
+                <p><span>Phone Number:</span> +234 903 797 0980, +234 8091303786</p>
+
+                <span>
+                    <i class="fa-solid fa-envelope-circle-check fa-3x"></i>
+                </span>
+                <p><span>Email:</span> <a href="mailto:info@comeththemancomeththehour.com">info@comeththemancomeththehour.com</a>, <a href="mailto:inquiry@comeththemancomeththehour.com">inquiry@comeththemancomeththehour.com</a></p> 
+            </div>
+
+            <form action="contact-form.php" method="POST">
+                <h3>Let's here from you</h3>
+                <label for="Full Name">Full Name</label>
+                <input type="text" name="fname" placeholder="John Doe" required />
+                <label for="Email">Email</label>
+                <input type="email" name="email" placeholder="doe@example.com" required />
+                <label for="Message">Message</label>
+                <textarea name="mssg" placeholder="Message goes here" required></textarea>
+                <button type="submit" name="send">Send</button>
+            </form>
+        </div>   
+    </section>
+
+    <!-- map -->
+    <section class="map">
+        <h1>Get directions</h1>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1969.5178434511486!2d7.328381626180332!3d9.151249618538925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104dd8e784307591%3A0x5a8bbcdc352e319d!2sEmzak%20Plaza%2C%20Gado%20Nasko%20Rd%2C%20Kubwa%20901101%2C%20Abuja%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1672321480527!5m2!1sen!2sng" width="800" height="600" style="border: 0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <footer id="copyright" class="footer"></footer>
+      
+</body>
+</html>

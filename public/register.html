@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" description="Cometh the man cometh the hour book">
+    <meta name="title" content="Comeththemancomeththehour">
+    <meta name="title" description="Best selling book">
+    <meta name="title"
+        content="Cometh the man cometh the hour is a best selling book promoting the campaign for Peter Obi's presidential run">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script defer src="js/index.js"></script>
+    <title>Cometh the man cometh the hour</title>
+</head>
+
+<body>
+    <!-- main section -->
+    <main>
+        <section class="wrapper">
+            <section>
+                <!-- header starts -->
+                <header class="header">
+                    <!-- navigation menu -->
+                    <div class="nav-menu">
+                        <div class="menu-list">
+                            <a href="index.html">Home</a>
+                            <a href="inc/shop.php">Shop</a>
+                            <a href="register.html">Join the movement</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+
+                    <!-- mobile menu -->
+                    <div class="hamburger">
+                        <i onclick="nav()" class="fa-solid fa-bars fa-3x"></i>
+                    </div>
+
+                    <!-- display mobile menu list -->
+                    <div id="nav-menu-list" class="menu-list-wrapper hide">
+                        <div class="menu-list">
+                            <i onclick="nav()" class="cancel fa-solid fa-xmark fa-3x"></i>
+                            <a href="index.html">Home</a>
+                            <a href="inc/shop.php">Shop</a>
+                            <a href="register.html">Join the movement</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+
+                    <!-- logo -->
+                    <figure class="logo">
+                        <img src="img/logo320.png" width="320" height="320" alt="Logo" />
+                    </figure>
+
+                    <!-- quote -->
+                    <div class="quote">
+                        <h2>The Promise:</h2><br />
+                        <p>
+                            "I will turn Nigeria from consumption to production, and cut costs of Governance"
+                        </p>
+                    </div>
+                </header>
+            </section>
+        </section>
+    </main>
+
+    <!-- body section -->
+    <!-- content -->
+    <section class="contents">
+        <h1>Join the movement</h1>
+        <p>Nigeria needs imminent political and socio-economic reform, more investment in youth capital development, education,
+        infrastructure, the industrial revolution, justice, security, and an egalitarian society. Join the movement and together
+        let us make this happen.</p>
+        <p><code>Note: Your information is secure and used only for the purpose of the movement.</code></p>
+    </section>
+
+    <!-- registration form -->
+    <section class="">
+        <h1>Register Here</h1>
+        <form action="inc/register.php" method="POST">
+            <label for="First Name">First Name</label>
+            <input type="text" name="fname" placeholder="John" required />
+
+            <label for="Last Name">Last Name</label>
+            <input type="text" name="lname" placeholder="Doe" required />
+
+            <label for="Email">Email</label>
+            <input type="email" name="email" placeholder="doe@example.com" required />
+
+            <label for="Phone Number">Phone Number</label>
+            <input type="number" name="num" placeholder="09077744455" required />
+
+            <label for="Occupation">Occupation</label>
+            <input type="text" name="occupation" placeholder="Engineer" required />
+
+            <label for="Date of Birth">Date of Birth</label>
+            <input type="date" name="date" required />
+ 
+            <label for="Location">Current Location</label>
+            <select name="location" required>
+                <option>Choose your location</option>
+                <option value="Abia">Abia</option>
+                <option value="Adamawa">Adamawa</option>
+                <option value="Akwa Ibom">Akwa Ibom</option>
+                <option value="Anambra">Anambra</option>
+                <option value="Bauchi">Bauchi</option>
+                <option value="Bayelsa">Bayelsa</option>
+                <option value="Benue">Benue</option>
+                <option value="Borno">Borno</option>
+                <option value="Cross River">Cross River</option>
+                <option value="Delta">Delta</option>
+                <option value="Ebonyi">Ebonyi</option>
+                <option value="Edo">Edo</option>
+                <option value="Ekiti">Ekiti</option>
+                <option value="Enugu">Enugu</option>
+                <option value="Gombe">Gombe</option>
+                <option value="Imo">Imo</option>
+                <option value="Jigawa">Jigawa</option>
+                <option value="Kaduna">Kaduna</option>
+                <option value="Kano">Kano</option>
+                <option value="Katsina">Katsina</option>
+                <option value="Kebbi">Kebbi</option>
+                <option value="Kogi">Kogi</option>
+                <option value="Kwara">Kwara</option>
+                <option value="Lagos">Lagos</option>
+                <option value="Nasarawa">Nasarawa</option>
+                <option value="Niger">Niger</option>
+                <option value="Ogun">Ogun</option>
+                <option value="Ondo">Ondo</option>
+                <option value="Osun">Osun</option>
+                <option value="Oyo">Oyo</option>
+                <option value="Plateau">Plateau</option>
+                <option value="Rivers">Rivers</option>
+                <option value="Sokoto">Sokoto</option>
+                <option value="Taraba">Taraba</option>
+                <option value="Yobe">Yobe</option>
+                <option value="Zamfara">Zamfara</option>
+            </select>
+
+            <label for="State of Origin">State of Origin</label>
+            <select name="state" required>
+                <option>Choose your State of Origin</option>
+                <option value="Abia">Abia</option>
+                <option value="Adamawa">Adamawa</option>
+                <option value="Akwa Ibom">Akwa Ibom</option>
+                <option value="Anambra">Anambra</option>
+                <option value="Bauchi">Bauchi</option>
+                <option value="Bayelsa">Bayelsa</option>
+                <option value="Benue">Benue</option>
+                <option value="Borno">Borno</option>
+                <option value="Cross River">Cross River</option>
+                <option value="Delta">Delta</option>
+                <option value="Ebonyi">Ebonyi</option>
+                <option value="Edo">Edo</option>
+                <option value="Ekiti">Ekiti</option>
+                <option value="Enugu">Enugu</option>
+                <option value="Gombe">Gombe</option>
+                <option value="Imo">Imo</option>
+                <option value="Jigawa">Jigawa</option>
+                <option value="Kaduna">Kaduna</option>
+                <option value="Kano">Kano</option>
+                <option value="Katsina">Katsina</option>
+                <option value="Kebbi">Kebbi</option>
+                <option value="Kogi">Kogi</option>
+                <option value="Kwara">Kwara</option>
+                <option value="Lagos">Lagos</option>
+                <option value="Nasarawa">Nasarawa</option>
+                <option value="Niger">Niger</option>
+                <option value="Ogun">Ogun</option>
+                <option value="Ondo">Ondo</option>
+                <option value="Osun">Osun</option>
+                <option value="Oyo">Oyo</option>
+                <option value="Plateau">Plateau</option>
+                <option value="Rivers">Rivers</option>
+                <option value="Sokoto">Sokoto</option>
+                <option value="Taraba">Taraba</option>
+                <option value="Yobe">Yobe</option>
+                <option value="Zamfara">Zamfara</option>
+            </select>
+
+            <label for="Local Government">Local Government</label>
+            <input type="text" name="local_govt" placeholder="Your local government area" required />
+            <button type="submit" name="send">Send</button>
+        </form>
+    </section>
+
+    <footer id="copyright" class="footer"></footer>
+
+</body>
+
+</html>

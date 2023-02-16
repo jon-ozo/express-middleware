@@ -1,0 +1,500 @@
+/* google font import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lato&family=Poppins:wght@400&family=Roboto:wght@400&display=swap');
+
+
+/* variables */
+:root {
+    --FONT: 'Poppins', sans-serif;
+    --FONTSIZE: 1.5rem;
+    --WIDTH: 100%;
+    --PADDING: 15px;
+    --MARGIN: 15px;
+    --FIXEDWIDTH: 70%;
+}
+
+
+/* page reset */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* element styles */
+h1 {
+    font-size: 2.5rem;
+    color: rgb(8, 85, 53);
+    text-align: center;
+    margin: 50px 0;
+}
+h3 {
+    color: rgb(0, 0, 190);
+}
+html {
+    scroll-behavior: smooth;
+    font-family: var(--FONT);
+}
+main {
+    width: var(--WIDTH);
+    background: url(../img/peter-obi.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.wrapper {
+    width: 100%;
+    background: rgba(41, 0, 34, 0.836);
+}
+header {
+    padding: var(--PADDING);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+header > .quote {
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 5px 5px 5px rgb(120, 120, 120);
+    text-align: center;
+    color: rgb(200, 200, 200);
+}
+.nav-menu {
+    display: none;
+}
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+i {
+    color: rgb(8, 85, 53);
+}
+.menu-list-wrapper {
+    width: 100%;
+    height: 100vh;
+    background: rgb(8, 85, 53);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.menu-list-wrapper .menu-list > a {
+    color: rgb(255, 255, 255);
+    display: block;
+    margin: var(--MARGIN);
+    padding: var(--PADDING);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    transition: all .5s ease-in;
+}
+.menu-list-wrapper .menu-list > i {
+    color: rgba(143, 4, 4, 0.74);
+    text-align: center;
+    margin: 20px;
+}
+.hide {
+    display: none;
+}
+article {
+    padding: var(--PADDING);
+    display: flex;
+    flex-direction: column;
+}
+.article-img > figure {
+    min-height: 150px;
+}
+.article-img > figcaption {
+    text-align: right;
+    font-size: var(--FONTSIZE);
+    color:rgb(255, 255, 255);
+}
+footer {
+    width: var(--WIDTH);
+    padding: var(--PADDING);
+    display: flex;
+    flex-direction: column;
+}
+footer > h2, footer > p {
+    text-align: center;
+    margin: 10px 0;
+    color: rgb(6, 204, 122);
+}
+footer > p span {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 10px;
+}
+.btn {
+    text-align: center;
+    text-decoration: none;
+    padding: var(--PADDING);
+    border: 1px solid rgb(200, 200, 200);
+    background: transparent;
+    border-radius: 5px;
+    color: rgb(200, 200, 200);
+    font-size: var(--FONTSIZE);
+    transition: all .4s ease-in;
+}
+.btn:hover {
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.buy-book {
+    padding: 30px;
+    border: 1px solid rgb(8, 85, 53);
+    border-radius: 5px;
+}
+.buy-book > figcaption {
+    text-align: center;
+    padding: var(--PADDING);
+    border: 1px solid rgb(194, 22, 22);
+    background: rgb(194, 22, 22);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .4s ease-in;
+}
+.buy-book > figcaption:hover {
+    background: transparent;
+}
+.buy-book a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 550;
+    transition: all .4s ease-in;
+}
+.buy-book a:hover {
+    color: rgb(194, 22, 22);
+}
+.book-desc {
+    padding: var(--PADDING);
+}
+.book-desc > h2 {
+    font-size: 1.5rem;
+    margin: 0 0 20px 0;
+    font-weight: bold;
+    color: rgb(194, 22, 22);
+    text-align: center;
+}
+.section2-header {
+    background: none;
+    padding: var(--PADDING);
+    display: block;
+}
+.section2-header > h2 {
+    text-align: center;
+    margin: 35px 0;
+    font-size: 3rem;
+    color: rgb(8, 85, 53);
+}
+.about-author > figure figcaption {
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: normal;
+    text-shadow: none;
+    text-align: center;
+    margin: 0 0 20px 0;
+    color: rgb(194, 22, 22);
+}
+.about-author > p {
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-style: normal;
+    text-shadow: none;
+    text-align: center;
+}
+.about-author > .book-desc h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: normal;
+    text-shadow: none;
+    text-align: none;
+    color: rgb(194, 22, 22);
+    margin: 0 0 20px 0;
+}
+.about-author > .book-desc p {
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-style: normal;
+    text-shadow: none;
+    text-align: none;
+}
+p {
+    font-size: 1.2rem;
+}
+.title {
+    width: var(--WIDTH);
+    text-align: center;
+    margin: 50px 0;
+    font-size: 3rem;
+    color: rgb(8, 85, 53);
+    padding: var(--PADDING);
+    background: rgb(200, 200, 200);
+    border-radius: 5px;
+}
+i {
+    color: rgb(233, 115, 253);
+}
+iframe {
+    width: 100%;
+}
+.contents {
+    padding: var(--PADDING);
+}
+.contents > p {
+    text-align: center;
+    padding: var(--PADDING);
+}
+.content-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    margin: 0 0 30px 0;
+    padding: var(--PADDING);
+}
+.contact-details {
+    background: rgb(8, 85, 53);
+    margin: 0 0 15px 0;
+    border-radius: 8px;
+    padding: var(--PADDING);
+}
+.contact-details p {
+    line-height: 2;
+    color:rgb(75, 247, 175);
+    margin: 20px 0;
+}
+.contact-details p > a{
+    word-break: break-all;
+}
+.contact-details > span {
+    display: block;
+    text-align: center;
+}
+.contact-details > p span {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color:rgb(75, 247, 175);
+}
+.contact-details a {
+    color:rgb(215, 56, 243);
+    text-decoration: none;
+    transition: all .5s ease-in;
+}
+.contact-details a:hover {
+    text-decoration: underline;
+    color: rgb(208, 9, 243);
+}
+form {
+    padding: var(--PADDING);
+}
+form > h3 {
+    margin: 30px 0;
+    color:rgb(160, 2, 2);
+}
+label {
+    font-weight: bold;
+    margin: 20px 0 0 0;
+}
+input {
+    padding: var(--PADDING);
+    border: 1px solid rgb(160, 2, 2);
+    outline: none;
+    border-radius: 10px;
+    width: 100%;
+    margin: 15px 0;
+}
+textarea {
+    padding: var(--PADDING);
+    border: 1px solid rgb(160, 2, 2);
+    outline: none;
+    border-radius: 10px;
+    width: 100%;
+    margin: 15px 0;
+    height: 100px;
+}
+button {
+    width: 100%;
+    padding: var(--PADDING);
+    background: rgb(231, 230, 230);
+    color: rgb(8, 85, 53);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all .5s ease-in;
+}
+button:hover {
+    background: rgb(8, 85, 53);
+    color: rgb(255, 255, 255);
+}
+select {
+    width: 100%;
+    border-radius: 10px;
+    padding: var(--PADDING);
+    border: 1px solid rgb(160, 2, 2);
+    outline: none;
+    margin: 15px 0;
+}
+.footer {
+    display: block;
+    background:rgb(56, 2, 66);
+}
+.footer > p {
+    text-align: center;
+    font-size: 1rem;
+}
+.products {
+    padding: var(--PADDING);
+    box-shadow: 5px 5px 15px rgb(118, 118, 119);
+    transition: background .3s ease-in;
+}
+.products:hover {
+    background: rgb(209, 209, 209);
+}
+.products > figure img {
+    margin: 25px 0;
+}
+.products > figure figcaption {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: rgb(8, 85, 53);
+}
+.products > figure .buy-button a {
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgb(160, 2, 2);
+    text-decoration: none;
+}
+
+
+
+/* media queries */
+@media screen and (min-width: 1025px) {
+    .wrapper {
+        width: 100%;
+        background: rgba(41, 0, 34, 0.836);
+    }
+    section {
+        width: var(--FIXEDWIDTH);
+        margin: 0 auto;
+        padding: var(--PADDING);
+    }
+    header {
+        padding: var(--PADDING);
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header > .nav-menu {
+        width: 100%;
+        display: block;
+        padding: var(--PADDING);
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px rgb(56, 2, 66);
+    }
+    .nav-menu > .menu-list {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .nav-menu .menu-list > a {
+        color: rgb(200, 200, 200);
+        display: inline;
+        margin: var(--MARGIN);
+        padding: var(--PADDING);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        transition: color .5s ease-in;
+    }
+    .nav-menu .menu-list > a:hover {
+        color:rgb(255, 255, 255);
+        border-bottom: 5px solid rgb(160, 2, 2);
+        border-radius: 5px;
+    }
+    header > .logo {
+        width: 30%;
+    }
+    header > .quote {
+        font-size: 2rem;
+        font-weight: bold;
+        font-style: italic;
+        width: 35%;
+        text-shadow: 5px 5px 5px rgb(120, 120, 120);
+        padding: 20px 0 0 0;
+    }
+    .hamburger {
+        display: none;
+    }
+    article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .buy-book {
+        width: 40%;
+        padding: 30px;
+        border: 1px solid rgb(8, 85, 53);
+        border-radius: 5px;
+    }
+    .about-author {
+        width: var(--WIDTH);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .book-desc {
+        width: 40%;
+        padding: var(--PADDING);
+    }
+    .about-author > .book-desc {
+        width: 40%;
+        padding: var(--PADDING);
+    }
+    .about-author figure {
+        width: 40%;
+    }
+    .map {
+        width: 100%;
+    }
+    footer {
+        padding: var(--PADDING);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .content-wrapper {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--PADDING);
+    }
+    .success-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .products-wrapper {
+        display: flex;
+        justify-content: space-between;       
+    }
+    .products > figure {
+        width: 300px;
+        height: auto;
+    }
+}
